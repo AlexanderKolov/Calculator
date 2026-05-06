@@ -29,7 +29,7 @@ namespace project
                     Console.WriteLine("6.Возвести число в степень.");
                     Console.WriteLine("7.Выход.");
                     Console.WriteLine("====================================");
-                    Console.Write("Выберите опрерацию: ");
+                    Console.Write("Выберите операцию: ");
                     num_menu = Convert.ToInt16(Console.ReadLine());
 
 
@@ -44,7 +44,7 @@ namespace project
                             StoryAction(result);
                             break;
                         case 3:
-                            result = MyltyPlay();
+                            result = Multiply();
                             StoryAction(result);
                             break;
                         case 4:
@@ -52,7 +52,7 @@ namespace project
                             StoryAction(result);
                             break;
                         case 5:
-                            result = EndDivision();
+                            result = Modulus();
                             StoryAction(result);
                             break;
                         case 6:
@@ -104,7 +104,7 @@ namespace project
             //Console.WriteLine("====================================");
             return result;
         }
-        static double MyltyPlay()
+        static double Multiply()
         {
             double a, b, result;
             Console.Write("Введите первое число: ");
@@ -143,7 +143,7 @@ namespace project
             //Console.WriteLine("====================================");
             return result;
         }
-        static double EndDivision()
+        static double Modulus()
         {
             double a, b, result;
             Console.Write("Введите первое число: ");
